@@ -1,2 +1,2 @@
 # logging_system
-Simple log system written in C.
+Simple logging system written in C.

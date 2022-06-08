@@ -1,5 +1,8 @@
+#ifndef _HCT_LOG_
+#define _HCT_LOG_
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
 #define LOG_WARN_ENABLED 1
 #define LOG_INFO_ENABLED 1
 #define LOG_DEBUG_ENABLED 1
@@ -44,4 +47,5 @@ void log_output(LogPriority priority, const char *message, ...);
 #define HCT_TRACE(message, arg...) log_output(TracePriority, message, arg)
 #else
 #define HCT_TRACE(message, arg...)
+#endif
 #endif
